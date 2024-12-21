@@ -1,0 +1,23 @@
+{
+    "name": "flarum-cn/mcq-quiz",
+    "description": "Interactive MCQ quiz plugin for Flarum",
+    "type": "flarum-extension",
+    "require": {
+        "flarum/core": "^1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FlarumCN\\MCQQuiz\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "MCQ Quiz",
+            "icon": {
+                "name": "fas fa-question-circle",
+                "backgroundColor": "#238c59",
+                "color": "#fff"
+            }
+        }
+    }
+} 

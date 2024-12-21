@@ -1,0 +1,11 @@
+composer create-flarum-extension mcq-quiz
+cd mcq-quiz 
+mkdir -p js/dist js/src/forum/components less src
+npm init -y
+npm install --save-dev flarum-webpack-config webpack webpack-cli
+npm run build
+
+# 在 Flarum 根目录下
+composer config repositories.mcq-quiz vcs https://github.com/your-username/mcq-quiz
+composer require flarum-cn/mcq-quiz:*@dev
+php flarum cache:clear

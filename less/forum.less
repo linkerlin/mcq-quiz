@@ -1,0 +1,82 @@
+.mcq-question {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+
+    .mcq-header {
+        margin-bottom: 15px;
+
+        h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .mcq-knowledge-point {
+            color: #666;
+            font-size: 0.9em;
+        }
+    }
+
+    .mcq-options {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 15px 0;
+
+        .mcq-option {
+            text-align: left;
+            background: white;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+            transition: all 0.2s;
+
+            &:hover:not(:disabled) {
+                background: #f0f0f0;
+            }
+
+            &.selected {
+                font-weight: bold;
+            }
+
+            &.correct {
+                background: #d4edda;
+                border-color: #c3e6cb;
+            }
+
+            &.incorrect {
+                background: #f8d7da;
+                border-color: #f5c6cb;
+            }
+        }
+    }
+
+    .mcq-result {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #ddd;
+
+        .mcq-feedback {
+            font-weight: bold;
+            margin-bottom: 10px;
+
+            &.correct {
+                color: #28a745;
+            }
+
+            &.incorrect {
+                color: #dc3545;
+            }
+        }
+
+        .mcq-explanation {
+            background: white;
+            padding: 15px;
+            border-radius: 4px;
+            
+            > div {
+                margin-bottom: 10px;
+            }
+        }
+    }
+} 
